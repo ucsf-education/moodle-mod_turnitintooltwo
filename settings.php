@@ -137,7 +137,7 @@ if ($ADMIN->fulltree) {
     $settings->add(new admin_setting_configselect('turnitintooltwo/apiurl',
                                     get_string("turnitinapiurl", "turnitintooltwo"),
                                     get_string("turnitinapiurl_desc", "turnitintooltwo").$offlinecomment.$testconnection,
-                                    0, $testoptions));
+                                    null, $testoptions));
 
     // Miscellaneous settings.
     $settings->add(new admin_setting_heading('turnitintooltwo_debugginglogs',
